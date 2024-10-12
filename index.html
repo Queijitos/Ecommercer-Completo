@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Cadastro Ecommerce</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script src='main.js' defer></script>
 </head>
 <body>
-    <h1>Formulario de Cadastro</h1>
+    <h1 style="text-align: center; color: rgba(0, 0, 0, 0.8);">Formulário de Cadastro</h1>
     <div class="container">
         <div class="form-image">
-            <img src="undraw_website_5bo8.svg" alt="">
+            <img src="undraw_website_5bo8.svg" alt="Imagem ilustrativa">
         </div>
         <div class="form">
-            <form action="#">
+            <form id="cadastroForm">
                 <div class="form-header">
                     <div class="titlle">
-                        <h1>cadastra-se</h1>
+                        <h1>Cadastra-se</h1>
                     </div>
                     <div class="login-button">
-                        <button><a href="#">entrar</a></button>
+                        <button><a href="#">Entrar</a></button>
                     </div>
                 </div>
                 <div class="input-group">
@@ -31,46 +31,44 @@
                     </div>
                     <div class="input-box">
                         <label for="Email">Seu email</label>
-                        <input id="Email" type="text" name="Email" placeholder="Digite seu email aqui" required>
+                        <input id="Email" type="email" name="Email" placeholder="Digite seu email aqui" required>
                     </div>
                     <div class="input-box">
-                        <label for="Number">Seu numero</label>
-                        <input id="Number" type="text" name="Number" placeholder="Digite seu numero aqui" required>
+                        <label for="Number">Seu número</label>
+                        <input id="Number" type="number" name="Number" placeholder="Digite seu número aqui" required>
                     </div>
                     <div class="input-box">
                         <label for="password">Sua senha</label>
-                        <input id="password" type="text" name="password" placeholder="Digite sua senha aqui" required>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha aqui" required>
                     </div>
                     <div class="input-box">
                         <label for="confirmpassorwd">Confirme sua senha</label>
-                        <input id="confirmpassorwd" type="text" name="confirmpassorwd" placeholder="Confirme sua senha" required>
+                        <input id="confirmpassorwd" type="password" name="confirmpassorwd" placeholder="Confirme sua senha" required>
                     </div>
                 </div>
                 <div class="gender-inputs">
                     <div class="gender-title">
-                        <h6>Generos</h6>
+                        <h6>Gêneros</h6>
                     </div>
                     <div class="gender-group">
                         <div class="gender-input">
-                            <input type="radio" id="male" name="gender">
+                            <input type="radio" id="male" name="gender" value="male" required>
                             <label for="male">Masculino</label>
                         </div>
                         <div class="gender-input">
-                            <input type="radio" id="female" name="gender">
-                            <label for="female">feminino</label>
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Feminino</label>
                         </div>
                         <div class="gender-input">
-                            <input type="radio" id="others" name="gender">
+                            <input type="radio" id="others" name="gender" value="others" required>
                             <label for="others">Outros</label>
                         </div>
                     </div>
                 </div>
 
                 <div class="continue-button">
-                    <button><a href="#">Continuar</a></button>
+                    <button type="submit">Continuar</button>
                 </div>
             </form>
         </div>
     </div>
-</body>
-</html>
